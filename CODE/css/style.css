@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+/* Estilos globais */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ECE0F5; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    color: #313131;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #694F8E; /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 13px 18px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais visível */
+    position: relative; /* Necessário para z-index */
+    z-index: 15; /* Garante que o cabeçalho esteja acima de outros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #B692C2; /* Cor de fundo do menu */
+    padding: 80px 18px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aumentada a opacidade da sombra */
+    position: relative; /* Necessário para z-index */
+    z-index: 10; /* Garante que o menu esteja acima de outros elementos */
+}
+
+.menu a {
+    position: relative;
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 3.5em;
+    font-weight: bolder;
+    
+    
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Ajuste para posicionar o sublinhado abaixo do texto */
+    width: 100%;
+    height: 3px; /* Espessura do sublinhado */
+    background-color: currentColor;
+    border-radius: 5px; /* Arredondamento das bordas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra do sublinhado */
+}
+
+/* Conteúdo principal */
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    font-size: 2.2em;
+    color: #545454;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 30px -10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin: 20px 18px;
+}
+
+/* Estilo da imagem */
+.content img {
+    max-width: 100%; /* Para a imagem ocupar no máximo a largura do contêiner */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra da imagem */
+}
+
+/* Rodapé (Opcional) */
+.footer {
+    background-color: #694F8E; /* Cor de fundo do rodapé */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}

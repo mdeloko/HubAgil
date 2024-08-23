@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ECE0F5; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    color: #313131;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #694F8E; /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 13px 18px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais visível */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    gap: -55px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: bold;
+    padding: 5px 150px;
+    font-size: 1.01em;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #B692C2; /* Cor de fundo do menu */
+    padding: 80px 18px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aumentada a opacidade da sombra */
+    position: relative; /* Necessário para z-index */
+    z-index: 10; /* Garante que o menu esteja acima de outros elementos */
+}
+
+.menu a {
+    position: relative;
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Ajuste para posicionar o sublinhado abaixo do texto */
+    width: 100%;
+    height: 3px; /* Espessura do sublinhado */
+    background-color: currentColor;
+    border-radius: 5px; /* Arredondamento das bordas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra do sublinhado */
+}
+
+/* Seção Galeria */
+.gallery-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    color: #545454;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    gap: 20px; /* Espaço entre os itens */
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: #B692C2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    text-align: center;
+    height: 350px; /* Altura fixa para todos os itens */
+    width: 350px; /*Largura fixa para todos os itens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Garante que a imagem cubra totalmente a área do elemento */
+    height: 180px; /* Define uma altura fixa para as imagens */
+}
+
+.gallery-item p {
+    color: white;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+}
