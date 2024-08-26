@@ -150,6 +150,7 @@ label:active::after {
 .content p {
     font-size: 1.2em;
     margin: 20px 18px;
+    text-indent: 2em;
 }
 
 /* Estilo da imagem */
@@ -159,6 +160,14 @@ label:active::after {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra da imagem */
+}
+
+.content li{
+    text-align: justify;
+}
+
+.content abbr{
+    text-decoration: none;
 }
 
 /* Rodapé (Opcional) */
