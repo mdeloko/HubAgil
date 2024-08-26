@@ -15,20 +15,73 @@ body {
     color: white;
     padding: 13px 18px;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais visível */
-    position: relative; /* Necessário para z-index */
-    z-index: 15; /* Garante que o cabeçalho esteja acima de outros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Necessário para z-index */
+    z-index: 15; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/*Estilização do botão darkmode*/
+.header nav {
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;/*Permite que o nav crescça para ocupar o espaço disponível*/
+    gap: 20px; /* Ajuste o valor para controlar o espaçamento entre os links */
 }
 
 .header nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1.01em;
+}
+
+label {
+    width: 87px;
+    height: 38px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    background: linear-gradient(100deg, #818181, #a3a3a3);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background: #242424;
+}
+
+input:checked + label::after {
+    left: 77px;
+    transform: translateX(-100%);
+    background: linear-gradient(100deg, #777, #3a3a3a);
+}
+
+label:active::after {
+    width: 33px;
 }
 
 .header h1 {
@@ -109,8 +162,9 @@ body {
 }
 
 /* Rodapé (Opcional) */
+/*
 .footer {
-    background-color: #694F8E; /* Cor de fundo do rodapé */
+    background-color: #694F8E; /* Cor de fundo do rodapé 
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -118,6 +172,7 @@ body {
     bottom: 0;
     width: 100%;
 }
+*/
 
 .footer p {
     margin: 0;
