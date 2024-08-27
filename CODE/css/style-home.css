@@ -9,26 +9,28 @@ body {
     color: #313131;
     transition: all 0.3s;
 }
+/*DarkMode CSS*/
 body.dark{
     transition: all 0.3s;
     color: white;
-    background-color: #2a2438;
+    background-color: #27262e;
 }
 body.dark h2{
     color: white;
 }
 div.dark{
-    background-color: #352f44;
+    background-color: #100f18;
 }
 div.menu.dark::before{
     background-image: url('../images/pngegg.png'); /* Substitua com o caminho da sua imagem */
     background-size: 1300px 1500px; /* Faz a imagem cobrir todo o menu */
     background-repeat: no-repeat;
     background-position: right 45%;
-    background-color: #5c5470;
+    background-color: #383838;
     text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Aumentada a opacidade da sombra */
+    box-shadow: 0 4px 8px rgba(20, 19, 19, 0.8); /* Aumentada a opacidade da sombra */
 }
+
 
 /* Cabeçalho */
 .header {
@@ -67,7 +69,7 @@ label {
     display: block;
     background: #ebebeb;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -5px 15px rgba(83, 83, 83, 0.4);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -204,6 +206,7 @@ label:active::after {
 }
 */
 
-.footer p {
+/*.footer p {
     margin: 0;
 }
+*/
