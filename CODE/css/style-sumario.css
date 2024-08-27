@@ -5,6 +5,35 @@ body {
     padding: 0;
     color: #313131;
 }
+/*DarkMode CSS*/
+body.dark{
+    transition: all 0.3s;
+    color: white;
+    background-color: #2a2438;
+}
+body.dark h2{
+    color: white;
+}
+div.dark{
+    background-color: #352f44;
+}
+div.menu.dark::before{
+    background-image: url('../images/pngegg.png'); /* Substitua com o caminho da sua imagem */
+    background-size: 1300px 1500px; /* Faz a imagem cobrir todo o menu */
+    background-repeat: no-repeat;
+    background-position: right 45%;
+    background-color: #5c5470;
+    text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Aumentada a opacidade da sombra */
+}
+div.gallery-item.dark {
+    transition: all 0.3s;
+    background-color: #B692C2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s;
+}
 
 /* Cabeçalho */
 .header {
@@ -88,7 +117,7 @@ label:active::after {
 
 /* Menu de navegação */
 .menu {
-    background-image: url('/images/pngegg.png'); /* Substitua com o caminho da sua imagem */
+    background-image: url('../images/pngegg.png'); /* Substitua com o caminho da sua imagem */
     background-size: 1300px 1500px; /* Faz a imagem cobrir todo o menu */
     background-repeat: no-repeat;
     background-position: right 45%; /* Centraliza a imagem no menu */
@@ -137,6 +166,7 @@ label:active::after {
 .gallery-section {
     padding: 30px;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .gallery-section h2 {
@@ -162,6 +192,7 @@ label:active::after {
     justify-items: center;
 }
 
+
 .gallery-item {
     background-color: #B692C2;
     border-radius: 8px;
@@ -174,6 +205,8 @@ label:active::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .gallery-item:hover {
@@ -208,13 +241,18 @@ label:active::after {
 */
 
 /* Responsividade */
+@media (max-width:1240px){
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 835px) {
     .gallery {
         grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
     }

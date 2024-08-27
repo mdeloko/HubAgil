@@ -7,6 +7,27 @@ body {
     margin: 0;
     padding: 0;
     color: #313131;
+    transition: all 0.3s;
+}
+body.dark{
+    transition: all 0.3s;
+    color: white;
+    background-color: #2a2438;
+}
+body.dark h2{
+    color: white;
+}
+div.dark{
+    background-color: #352f44;
+}
+div.menu.dark::before{
+    background-image: url('../images/pngegg.png'); /* Substitua com o caminho da sua imagem */
+    background-size: 1300px 1500px; /* Faz a imagem cobrir todo o menu */
+    background-repeat: no-repeat;
+    background-position: right 45%;
+    background-color: #5c5470;
+    text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Aumentada a opacidade da sombra */
 }
 
 /* Cabeçalho */
@@ -91,7 +112,7 @@ label:active::after {
 
 /* Menu de navegação */
 .menu {
-    background-image: url('/images/pngegg.png'); /* Substitua com o caminho da sua imagem */
+    background-image: url('../images/pngegg.png'); /* Substitua com o caminho da sua imagem */
     background-size: 1300px 1500px; /* Faz a imagem cobrir todo o menu */
     background-repeat: no-repeat;
     background-position: right 45%; /* Centraliza a imagem no menu */
