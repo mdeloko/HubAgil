@@ -25,9 +25,7 @@ body.dark ol{
 body.dark li{
     color: white;
 }
-body.dark a{
-    color: #ffffff;
-}
+
 div.dark{
     background-color: #100f18;
 }
@@ -174,7 +172,7 @@ label:active::after {
 /* Conteúdo principal */
 .content {
     padding: 20px;
-    max-width: 1800px;
+    max-width: 1600px;
     margin: right auto;
     justify-content: center;
 }
@@ -236,6 +234,10 @@ ol li {
 
 ol li p {
     margin-bottom: 10px;
+    font-size: 1.2em;
+    margin: 20px 18px;
+    text-indent: 2em;
+    text-align: justify;
 }
 
 a {
@@ -248,6 +250,28 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajustes para garantir o mesmo tamanho e centralização */
+.content img {
+    max-width: 600px; /* Define o tamanho máximo das imagens */
+    width: 100%; /* Garante que as imagens ocupem todo o espaço disponível */
+    height: 450px; /* Define uma altura fixa para as imagens */
+    object-fit: fill; /* Garante que a imagem preencha o espaço sem distorções */
+}
+
+/* Efeito de zoom ao passar o mouse */
+img:hover {
+    transform: scale(1.06);
+}
 
 /* Rodapé (Opcional) */
 /*
@@ -262,6 +286,4 @@ a:hover {
 }
 */
 
-
 /* Responsividade */
-
