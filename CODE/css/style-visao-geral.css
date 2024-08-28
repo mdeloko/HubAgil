@@ -156,6 +156,9 @@ label:active::after {
     font-weight: bolder;
     z-index: 2; /* Garante que o texto esteja acima da camada roxa */
 }
+#visao-geral{
+    text-decoration: none;
+}
 
 .menu a::after {
     content: '';
