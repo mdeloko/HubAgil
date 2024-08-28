@@ -178,7 +178,7 @@ label:active::after {
 
 /* Estilo da imagem */
 .content img {
-    max-width: 100%; /* Para a imagem ocupar no máximo a largura do contêiner */
+    max-width: 80%; /* Para a imagem ocupar no máximo a largura do contêiner */
     height: auto;
     margin-top: 20px;
     border-radius: 8px;

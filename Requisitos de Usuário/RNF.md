@@ -6,6 +6,6 @@
 | :--: | :-----------------------------------------------------------------------: | :--------: | :---------: |
 | RNF01 |O sistema deve ser responsivo na majoritaria parte dos dispositivos.|  Alta     |             |
 | RNF02 |O sistema deve ser performático ao carregar a landing page.         |  Média    |             |
-| RNF03 |O sistema deve ser intuitivo/fácil de usar.                         |  Alta     |             |
+| RNF03 |O sistema deve ter facilidade de usar, tendo todos os redirecionamentos internos com fácil acesso, de preferência em uma barra de navegação ao topo.              |  Alta     |             |
 | RNF04 |O sistema deve ser implementado em HTML, CSS, JS.                   |  Alta     |             |
 | RNF05 |O sistema deve ser seguro.                                          |  Alta     |             |

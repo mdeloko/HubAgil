@@ -9,7 +9,7 @@ Projeto da Disciplina de Desenvolvimento Ágil (2024-1) da UTFPR, que visa criar
 - [Gabriela Saori Miyasaka](https://github.com/gsaorim) (gsaorim)  
  
 **Conteúdos:**  
-- Prototipação
+- Prototipação [Aqui](https://www.figma.com/design/rXPj1XnN88MnUpSSkdgZXA/Design-Hub-%C3%81gil?node-id=1-2&t=r3VeQb4scDVjHbsA-1) (Figma)
 - Requisitos de Sistema
 - Requisitos de Usuário  
 
